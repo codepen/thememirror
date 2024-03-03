@@ -15,11 +15,13 @@
 	"types": "./dist/index.d.ts",
 	"scripts": {
 		"prepare": "npm run build",
-		"postinstall": "npm run build",
 		"build": "tsc",
 		"dev": "tsc --watch",
 		"test": "prettier --check source && xo"
 	},
+	"files": [
+		"dist"
+	],
 	"keywords": [
 		"codemirror",
 		"theme",
